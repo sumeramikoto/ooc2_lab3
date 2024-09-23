@@ -8,7 +8,7 @@ public class FizzyPrinterTest {
     public void FizzTest() {
         FizzyPrinter fizzyPrinter = new FizzyPrinter();
         String expectedString = "Fizz";
-        String resultingString = fizzyPrinter.printFizzy(9);
+        String resultingString = fizzyPrinter.printFizzy(9, false);
         assertEquals(expectedString, resultingString);
     }
 
@@ -16,7 +16,7 @@ public class FizzyPrinterTest {
     public void BuzzTest() {
         FizzyPrinter fizzyPrinter = new FizzyPrinter();
         String expectedString = "Buzz";
-        String resultingString = fizzyPrinter.printFizzy(10);
+        String resultingString = fizzyPrinter.printFizzy(10, false);
         assertEquals(expectedString, resultingString);
     }
 
@@ -24,7 +24,7 @@ public class FizzyPrinterTest {
     public void BangTest() {
         FizzyPrinter fizzyPrinter = new FizzyPrinter();
         String expectedString = "Bang";
-        String resultingString = fizzyPrinter.printFizzy(14);
+        String resultingString = fizzyPrinter.printFizzy(14, false);
         assertEquals(expectedString, resultingString);
     }
 
@@ -32,7 +32,7 @@ public class FizzyPrinterTest {
     public void FizzbuzzTest() {
         FizzyPrinter fizzyPrinter = new FizzyPrinter();
         String expectedString = "Fizzbuzz";
-        String resultingString = fizzyPrinter.printFizzy(15);
+        String resultingString = fizzyPrinter.printFizzy(15, false);
         assertEquals(expectedString, resultingString);
     }
 
@@ -40,7 +40,7 @@ public class FizzyPrinterTest {
     public void FizzbuzzbangTest() {
         FizzyPrinter fizzyPrinter = new FizzyPrinter();
         String expectedString = "Fizzbuzzbang";
-        String resultingString = fizzyPrinter.printFizzy(105);
+        String resultingString = fizzyPrinter.printFizzy(105, false);
         assertEquals(expectedString, resultingString);
     }
 
@@ -48,7 +48,7 @@ public class FizzyPrinterTest {
     public void BoomTest() {
         FizzyPrinter fizzyPrinter = new FizzyPrinter();
         String expectedString = "Boom";
-        String resultingString = fizzyPrinter.printFizzy(8);
+        String resultingString = fizzyPrinter.printFizzy(8, false);
         assertEquals(expectedString, resultingString);
     }
 }
